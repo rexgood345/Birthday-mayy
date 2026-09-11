@@ -1,0 +1,1654 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday Mayy 🌹</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ════════ BACKGROUND AUDIO (IDOY) ════════ -->
+    <audio id="bgAudio" loop preload="auto">
+      <source src="idow.mp3" type="audio/mpeg" />
+      <source src="idoy.mp3" type="audio/mpeg" />
+      <source src="idoy.m4a" type="audio/mp4" />
+      <source src="idoy.wav" type="audio/wav" />
+      <source src="idow" type="audio/mpeg" />
+    </audio>
+
+    <!-- ════════ CANVAS CONFETTI ════════ -->
+    <canvas id="confettiCanvas"></canvas>
+
+    <!-- ════════ INITIAL LOADING ════════ -->
+    <div class="page active" id="pg-loading">
+      <div class="ld-ring">
+        <div class="ld-ctr">🌹</div>
+        <span class="ld-orb" style="--os: 0deg; --or: 50px; --od: 3s">🌸</span>
+        <span class="ld-orb" style="--os: 60deg; --or: 50px; --od: 3s">🌺</span>
+        <span class="ld-orb" style="--os: 120deg; --or: 50px; --od: 3s"
+          >🌷</span
+        >
+        <span class="ld-orb" style="--os: 180deg; --or: 50px; --od: 3s"
+          >💕</span
+        >
+        <span class="ld-orb" style="--os: 240deg; --or: 50px; --od: 3s"
+          >✨</span
+        >
+        <span class="ld-orb" style="--os: 300deg; --or: 50px; --od: 3s"
+          >🌸</span
+        >
+      </div>
+      <p class="ld-txt">Please wait...</p>
+      <div class="ld-bar-w"><div class="ld-bar" id="ldBar"></div></div>
+    </div>
+
+    <!-- ════════ PAGE 1 — QR CODE ════════ -->
+    <div class="page" id="pg-qr">
+      <div class="hbg" id="hbg-qr"></div>
+      <p class="qr-eye">🌹 A Special Surprise</p>
+      <h1 class="qr-h1">Open Your<br /><em>Birthday Gift</em></h1>
+      <p class="qr-hint">Scan QR atau klik tombol untuk membuka</p>
+      <div class="qr-card">
+        <div class="heart-qr">
+          <svg viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <clipPath id="hcp">
+                <path
+                  d="M110,192C110,192,18,132,18,68C18,40,40,24,62,24C80,24,96,34,110,48C124,34,140,24,158,24C180,24,202,40,202,68C202,132,110,192,110,192Z"
+                />
+              </clipPath>
+              <linearGradient id="hrg" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#7b1917" />
+                <stop offset="100%" stop-color="#c0392b" />
+              </linearGradient>
+            </defs>
+            <path
+              d="M110,192C110,192,18,132,18,68C18,40,40,24,62,24C80,24,96,34,110,48C124,34,140,24,158,24C180,24,202,40,202,68C202,132,110,192,110,192Z"
+              fill="url(#hrg)"
+              stroke="#e74c3c"
+              stroke-width="2.5"
+            />
+            <g clip-path="url(#hcp)">
+              <rect x="30" y="30" width="44" height="44" rx="5" fill="#fff" />
+              <rect
+                x="36"
+                y="36"
+                width="32"
+                height="32"
+                rx="3"
+                fill="#7b1917"
+              />
+              <rect x="42" y="42" width="20" height="20" rx="2" fill="#fff" />
+              <rect x="146" y="30" width="44" height="44" rx="5" fill="#fff" />
+              <rect
+                x="152"
+                y="36"
+                width="32"
+                height="32"
+                rx="3"
+                fill="#7b1917"
+              />
+              <rect x="158" y="42" width="20" height="20" rx="2" fill="#fff" />
+              <rect x="30" y="146" width="44" height="44" rx="5" fill="#fff" />
+              <rect
+                x="36"
+                y="152"
+                width="32"
+                height="32"
+                rx="3"
+                fill="#7b1917"
+              />
+              <rect x="42" y="158" width="20" height="20" rx="2" fill="#fff" />
+              <rect x="84" y="34" width="9" height="9" rx="1.5" fill="#fff" />
+              <rect x="97" y="34" width="9" height="9" rx="1.5" fill="#fff" />
+              <rect
+                x="110"
+                y="34"
+                width="9"
+                height="9"
+                rx="1.5"
+                fill="#fadbd8"
+              />
+              <rect
+                x="84"
+                y="47"
+                width="9"
+                height="9"
+                rx="1.5"
+                fill="#fadbd8"
+              />
+              <rect x="97" y="60" width="9" height="9" rx="1.5" fill="#fff" />
+              <rect x="110" y="47" width="9" height="9" rx="1.5" fill="#fff" />
+              <rect x="123" y="34" width="9" height="9" rx="1.5" fill="#fff" />
+              <rect x="34" y="84" width="9" height="9" rx="1.5" fill="#fff" />
+              <rect
+                x="47"
+                y="84"
+                width="9"
+                height="9"
+                rx="1.5"
+                fill="#fadbd8"
+              />
+              <rect x="60" y="84" width="9" height="9" rx="1.5" fill="#fff" />
+              <rect
+                x="34"
+                y="97"
+                width="9"
+                height="9"
+                rx="1.5"
+                fill="#fadbd8"
+              />
+              <rect x="60" y="97" width="9" height="9" rx="1.5" fill="#fff" />
+              <rect x="84" y="84" width="9" height="9" rx="1.5" fill="#fff" />
+              <rect
+                x="97"
+                y="84"
+                width="9"
+                height="9"
+                rx="1.5"
+                fill="#fadbd8"
+              />
+              <rect x="110" y="97" width="9" height="9" rx="1.5" fill="#fff" />
+              <rect
+                x="84"
+                y="110"
+                width="9"
+                height="9"
+                rx="1.5"
+                fill="#fadbd8"
+              />
+              <rect
+                x="110"
+                y="110"
+                width="9"
+                height="9"
+                rx="1.5"
+                fill="#fadbd8"
+              />
+              <path
+                d="M110,120C110,120,98,113,98,105C98,100,102,97,106,99C108,100,110,102,110,102C110,102,112,100,114,99C118,97,122,100,122,105C122,113,110,120,110,120Z"
+                fill="#fff"
+                opacity=".9"
+              />
+            </g>
+          </svg>
+        </div>
+        <p style="font-size: 12px; color: rgba(255, 255, 255, 0.45)">
+          Arahkan kamera ke QR, atau
+        </p>
+        <button class="btn-gift" onclick="goTo('pg-pass')">
+          🌹 Buka Hadiah
+        </button>
+      </div>
+    </div>
+
+    <!-- ════════ PAGE 2 — PASSWORD ════════ -->
+    <div class="page" id="pg-pass">
+      <div class="hbg" id="hbg-pass"></div>
+      <div class="pw-wrap">
+        <div class="pw-ico">🌹</div>
+        <div class="pw-title">
+          For You, <span class="cfg-recipient">Mayy</span>
+        </div>
+        <p class="pw-sub">Enter the secret code</p>
+        <div class="pw-dots">
+          <div class="pw-dot" id="d0"></div>
+          <div class="pw-dot" id="d1"></div>
+          <div class="pw-dot" id="d2"></div>
+          <div class="pw-dot" id="d3"></div>
+          <div class="pw-dot" id="d4"></div>
+          <div class="pw-dot" id="d5"></div>
+        </div>
+        <div class="numpad">
+          <button class="nb" onclick="kp('1')">1</button>
+          <button class="nb" onclick="kp('2')">2</button>
+          <button class="nb" onclick="kp('3')">3</button>
+          <button class="nb" onclick="kp('4')">4</button>
+          <button class="nb" onclick="kp('5')">5</button>
+          <button class="nb" onclick="kp('6')">6</button>
+          <button class="nb" onclick="kp('7')">7</button>
+          <button class="nb" onclick="kp('8')">8</button>
+          <button class="nb" onclick="kp('9')">9</button>
+          <button class="nb del" onclick="kp('del')">✕</button>
+          <button class="nb" onclick="kp('0')">0</button>
+          <button class="nb ok" onclick="kp('ok')">↩</button>
+        </div>
+        <p class="pw-clue" id="pwClue">
+          Clue: tanggal ulang tahunmu 💕 (6 digit)
+        </p>
+        <p class="pw-err" id="pwErr"></p>
+      </div>
+    </div>
+
+    <!-- ════════ PAGE 3 — GIFT BOX ════════ -->
+    <div class="page" id="pg-gift">
+      <div id="spWrap"></div>
+      <p class="gift-lbl">Tap the gift box to open it 🎁</p>
+      <div class="giftbox" onclick="openGift()" id="giftEl">
+        <svg viewBox="0 0 200 220" xmlns="http://www.w3.org/2000/svg">
+          <ellipse cx="100" cy="215" rx="58" ry="7" fill="rgba(0,0,0,.3)" />
+          <rect x="20" y="110" width="160" height="100" rx="6" fill="#c0392b" />
+          <rect
+            x="20"
+            y="148"
+            width="160"
+            height="24"
+            fill="rgba(255,255,255,.24)"
+          />
+          <rect
+            x="88"
+            y="110"
+            width="24"
+            height="100"
+            fill="rgba(255,255,255,.24)"
+          />
+          <rect x="14" y="78" width="172" height="38" rx="6" fill="#e74c3c" />
+          <rect
+            x="14"
+            y="92"
+            width="172"
+            height="12"
+            fill="rgba(255,255,255,.27)"
+          />
+          <rect
+            x="91"
+            y="78"
+            width="18"
+            height="38"
+            fill="rgba(255,255,255,.27)"
+          />
+          <ellipse
+            cx="78"
+            cy="72"
+            rx="24"
+            ry="14"
+            fill="#fadbd8"
+            opacity=".9"
+            transform="rotate(-25 78 72)"
+          />
+          <ellipse
+            cx="122"
+            cy="72"
+            rx="24"
+            ry="14"
+            fill="#fadbd8"
+            opacity=".9"
+            transform="rotate(25 122 72)"
+          />
+          <circle cx="100" cy="74" r="12" fill="#fff" />
+          <circle cx="100" cy="74" r="7" fill="#e74c3c" />
+          <rect
+            x="30"
+            y="88"
+            width="18"
+            height="4"
+            rx="2"
+            fill="rgba(255,255,255,.38)"
+          />
+        </svg>
+      </div>
+      <p class="gift-tap">Tap untuk membuka 💝</p>
+    </div>
+
+    <!-- ════════ FLOWER COVER OVERLAY ════════ -->
+    <div id="flower-cover"></div>
+
+    <!-- ════════ HERO INTRO ANIMATION ════════ -->
+    <div id="pg-hero-anim">
+      <div class="ha-hbg" id="haHbg"></div>
+      <div
+        id="haContent"
+        style="
+          position: relative;
+          z-index: 1;
+          text-align: center;
+          padding: 20px;
+          width: 100%;
+          max-width: 600px;
+          margin: 0 auto;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: clamp(10px, 2.5vw, 18px);
+        "
+      >
+        <div class="ha-item" style="--hl: 0.05s">
+          <p class="ha-hb">HAPPY BIRTHDAY</p>
+        </div>
+        <div class="ha-item" style="--hl: 0.55s">
+          <h1 class="ha-title cfg-recipient">Mayy</h1>
+        </div>
+        <div class="ha-item" style="--hl: 1.1s">
+          <p class="ha-sub">"Hari Paling Istimewa" 🌹</p>
+        </div>
+        <div class="ha-item" style="--hl: 1.65s">
+          <p class="ha-wish">
+            Wishing you happiness, good health,<br />and all your dreams come
+            true 🤍
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ════════ PAGE 4 — MAIN (SCROLLABLE) ════════ -->
+    <div id="pg-main">
+      <!-- Continuous Falling Flower Petals & Hearts -->
+      <div id="fallingPetalsHearts" class="falling-container"></div>
+
+      <!-- Hero Banner -->
+      <div class="m-hero">
+        <div class="hbg" id="hbg-main"></div>
+        <span class="m-deco" style="top: 7%; left: 5%; animation-delay: 0.4s"
+          >🌹</span
+        >
+        <span class="m-deco" style="top: 12%; right: 7%; animation-delay: 1.1s"
+          >✨</span
+        >
+        <span
+          class="m-deco"
+          style="bottom: 10%; left: 8%; animation-delay: 0.7s"
+          >💕</span
+        >
+        <span
+          class="m-deco"
+          style="bottom: 7%; right: 5%; animation-delay: 1.4s"
+          >🎉</span
+        >
+        <span class="m-pill" id="heroPill">✨ Hari Paling Istimewa</span>
+        <p class="m-hb">Happy Birthday</p>
+        <h2 class="m-name cfg-recipient">Mayy</h2>
+        <p class="m-tagline" id="heroTagline">
+          Today — The most special day 🌹
+        </p>
+        <p class="m-wish" id="heroWish">
+          "Wishing you happiness, good health,<br />and all your dreams come
+          true 🤍"
+        </p>
+        <div class="sd-hint">
+          <span>scroll</span><span class="sd-arrow">↓</span>
+        </div>
+      </div>
+
+      <!-- "These are for you" section -->
+      <div class="m-gifts" id="giftsSection">
+        <p class="gifts-eyebrow sr">These are for you</p>
+        <h3 class="gifts-title sr sr-d1">These are for you 🎁</h3>
+        <div class="gifts-row">
+          <!-- CARD 1: MESSAGE -->
+          <div class="g-card sr sr-scale sr-d1" onclick="openSub('sp-msg')">
+            <div class="g-icon floating" style="--flt: 3.8s; --fltd: 0s">
+              <svg viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <filter
+                    id="env-shadow"
+                    x="-10%"
+                    y="-10%"
+                    width="120%"
+                    height="130%"
+                  >
+                    <feDropShadow
+                      dx="0"
+                      dy="6"
+                      stdDeviation="8"
+                      flood-color="rgba(0,0,0,0.22)"
+                    />
+                  </filter>
+                  <linearGradient id="env-bg" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stop-color="#ffffff" />
+                    <stop offset="100%" stop-color="#f0ece8" />
+                  </linearGradient>
+                  <linearGradient
+                    id="flap-bg"
+                    x1="0%"
+                    y1="0%"
+                    x2="0%"
+                    y2="100%"
+                  >
+                    <stop offset="0%" stop-color="#ece8e4" />
+                    <stop offset="100%" stop-color="#ddd8d2" />
+                  </linearGradient>
+                </defs>
+                <rect
+                  x="10"
+                  y="30"
+                  width="180"
+                  height="112"
+                  rx="10"
+                  fill="url(#env-bg)"
+                  filter="url(#env-shadow)"
+                />
+                <path
+                  d="M10,142 L88,88 M190,142 L112,88"
+                  stroke="#d8d0c8"
+                  stroke-width="1.2"
+                  opacity=".6"
+                />
+                <path
+                  d="M10,30 Q100,92 190,30"
+                  fill="url(#flap-bg)"
+                  stroke="#d5cfc8"
+                  stroke-width="1"
+                />
+                <circle cx="100" cy="90" r="22" fill="#b02020" />
+                <circle
+                  cx="100"
+                  cy="90"
+                  r="22"
+                  fill="none"
+                  stroke="#8a1515"
+                  stroke-width="2"
+                />
+                <circle cx="100" cy="90" r="13" fill="#c0392b" />
+                <path
+                  d="M100,97 C100,97 88,89 88,83 C88,79 92,77 96,79 C98,80 100,82 100,82 C100,82 102,80 104,79 C108,77 112,79 112,83 C112,89 100,97 100,97Z"
+                  fill="white"
+                  opacity=".9"
+                />
+              </svg>
+            </div>
+            <span class="g-lbl">Message</span>
+          </div>
+
+          <!-- CARD 2: FLOWER -->
+          <div
+            class="g-card sr sr-scale sr-d2"
+            style="width: clamp(120px, 30vw, 190px)"
+            onclick="openSub('sp-flower')"
+          >
+            <div
+              class="g-icon floating"
+              style="aspect-ratio: 3/4; --flt: 4.2s; --fltd: 0.4s"
+            >
+              <svg viewBox="0 0 180 220" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <filter id="bq-shadow">
+                    <feDropShadow
+                      dx="0"
+                      dy="8"
+                      stdDeviation="10"
+                      flood-color="rgba(0,0,0,0.25)"
+                    />
+                  </filter>
+                  <linearGradient
+                    id="wrap-grad"
+                    x1="20%"
+                    y1="0%"
+                    x2="80%"
+                    y2="100%"
+                  >
+                    <stop offset="0%" stop-color="#f0e0c0" />
+                    <stop offset="50%" stop-color="#e8d0a8" />
+                    <stop offset="100%" stop-color="#d4b880" />
+                  </linearGradient>
+                </defs>
+                <path
+                  d="M42,200 Q30,185 32,168 L68,80 L112,80 L148,168 Q150,185 138,200 Q110,216 90,215 Q70,216 42,200Z"
+                  fill="url(#wrap-grad)"
+                  filter="url(#bq-shadow)"
+                />
+                <ellipse
+                  cx="90"
+                  cy="192"
+                  rx="14"
+                  ry="7"
+                  fill="white"
+                  opacity=".85"
+                />
+                <path
+                  d="M72,192 Q82,182 90,192 Q98,182 108,192"
+                  fill="none"
+                  stroke="white"
+                  stroke-width="5"
+                  stroke-linecap="round"
+                  opacity=".85"
+                />
+                <line
+                  x1="72"
+                  y1="80"
+                  x2="58"
+                  y2="48"
+                  stroke="#3d6b4a"
+                  stroke-width="3.5"
+                  stroke-linecap="round"
+                />
+                <line
+                  x1="90"
+                  y1="80"
+                  x2="90"
+                  y2="42"
+                  stroke="#3d6b4a"
+                  stroke-width="3.5"
+                  stroke-linecap="round"
+                />
+                <line
+                  x1="108"
+                  y1="80"
+                  x2="122"
+                  y2="50"
+                  stroke="#3d6b4a"
+                  stroke-width="3.5"
+                  stroke-linecap="round"
+                />
+                <!-- Center Red Rose -->
+                <circle cx="90" cy="42" r="18" fill="#c0392b" />
+                <circle cx="90" cy="42" r="12" fill="#a93226" />
+                <circle cx="90" cy="42" r="6" fill="#7b1917" />
+                <!-- Pink flower -->
+                <circle cx="60" cy="50" r="13" fill="#f06292" />
+                <circle cx="60" cy="50" r="5" fill="#fce4ec" />
+                <!-- White Daisy -->
+                <circle cx="122" cy="52" r="13" fill="#fff" />
+                <circle cx="122" cy="52" r="6" fill="#fdd835" />
+              </svg>
+            </div>
+            <span class="g-lbl">Flower</span>
+          </div>
+
+          <!-- CARD 3: CAKE -->
+          <div class="g-card sr sr-scale sr-d3" onclick="openSub('sp-cake')">
+            <div class="g-icon floating" style="--flt: 3.5s; --fltd: 0.8s">
+              <svg viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <filter id="cake-shadow">
+                    <feDropShadow
+                      dx="0"
+                      dy="7"
+                      stdDeviation="9"
+                      flood-color="rgba(0,0,0,0.22)"
+                    />
+                  </filter>
+                  <linearGradient
+                    id="cake-side"
+                    x1="0%"
+                    y1="0%"
+                    x2="100%"
+                    y2="0%"
+                  >
+                    <stop offset="0%" stop-color="#c0392b" />
+                    <stop offset="100%" stop-color="#a93226" />
+                  </linearGradient>
+                </defs>
+                <path
+                  d="M30,148 L150,148 L138,80 L42,80 Z"
+                  fill="url(#cake-side)"
+                  filter="url(#cake-shadow)"
+                />
+                <ellipse cx="90" cy="70" rx="50" ry="14" fill="#ffffff" />
+                <path
+                  d="M90,46 C83,46 78,52 80,58 C82,64 90,68 90,68 C90,68 98,64 100,58 C102,52 97,46 90,46Z"
+                  fill="#e74c3c"
+                />
+                <ellipse
+                  cx="90"
+                  cy="150"
+                  rx="68"
+                  ry="10"
+                  fill="rgba(255,255,255,.25)"
+                />
+              </svg>
+            </div>
+            <span class="g-lbl">Cake</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ════════ DIGITAL BOUQUET SECTION (MATCHING SCREENSHOT) ════════ -->
+      <div class="m-digital-bouquet" id="digitalBouquetSection">
+        <div class="db-bg-accent"></div>
+        <p class="db-eyebrow sr">MY FIRST GIFT</p>
+        <h2 class="db-title sr sr-d1">Digital Bouquet</h2>
+        <p class="db-sub sr sr-d2">
+          Setiap bunga menyimpan pesan kecil untukmu
+        </p>
+
+        <!-- Bouquet Constellation Stage -->
+        <div class="db-stage sr sr-d3" id="dbStage">
+          <!-- Floating Glowing Aura Halo (positioned behind active flower) -->
+          <div class="db-glow-halo" id="dbGlowHalo"></div>
+
+          <!-- Constellation of Flowers -->
+          <!-- Top Row -->
+          <div
+            class="db-flower"
+            data-id="tulip1"
+            style="top: 8%; left: 16%"
+            title="Tulip"
+          >
+            <span class="db-fl-icon">🌷</span>
+          </div>
+          <div
+            class="db-flower"
+            data-id="rose1"
+            style="top: 6%; left: 47%"
+            title="Mawar Merah"
+          >
+            <span class="db-fl-icon">🌹</span>
+          </div>
+          <div
+            class="db-flower"
+            data-id="daisy1"
+            style="top: 10%; left: 77%"
+            title="Daisy"
+          >
+            <span class="db-fl-icon">🌼</span>
+          </div>
+
+          <!-- Second Row -->
+          <div
+            class="db-flower"
+            data-id="sakura1"
+            style="top: 20%; left: 28%"
+            title="Sakura"
+          >
+            <span class="db-fl-icon">🌸</span>
+          </div>
+          <div
+            class="db-flower"
+            data-id="bouquet1"
+            style="top: 18%; left: 62%"
+            title="Buket Cinta"
+          >
+            <span class="db-fl-icon">💐</span>
+          </div>
+
+          <!-- Middle Center Row (Sakura Center is Initially Active & Glowing!) -->
+          <div
+            class="db-flower db-active"
+            data-id="sakuraCenter"
+            id="dbDefaultActive"
+            style="top: 32%; left: 45%"
+            title="Bunga Paling Istimewa"
+          >
+            <span class="db-fl-icon db-icon-large">🌸</span>
+          </div>
+          <div
+            class="db-flower"
+            data-id="hibiscus1"
+            style="top: 32%; left: 12%"
+            title="Hibiscus"
+          >
+            <span class="db-fl-icon">🌺</span>
+          </div>
+          <div
+            class="db-flower"
+            data-id="tulip2"
+            style="top: 33%; left: 84%"
+            title="Tulip"
+          >
+            <span class="db-fl-icon">🌷</span>
+          </div>
+
+          <!-- Lower Rows -->
+          <div
+            class="db-flower"
+            data-id="daisy2"
+            style="top: 44%; left: 22%"
+            title="Daisy"
+          >
+            <span class="db-fl-icon">🌼</span>
+          </div>
+          <div
+            class="db-flower"
+            data-id="rose2"
+            style="top: 42%; left: 68%"
+            title="Mawar Kuncup"
+          >
+            <span class="db-fl-icon">🌹</span>
+          </div>
+          <div
+            class="db-flower"
+            data-id="sunflower1"
+            style="top: 52%; left: 9%"
+            title="Bunga Matahari"
+          >
+            <span class="db-fl-icon">🌻</span>
+          </div>
+          <div
+            class="db-flower"
+            data-id="sakura2"
+            style="top: 48%; left: 88%"
+            title="Cosmos"
+          >
+            <span class="db-fl-icon">🌸</span>
+          </div>
+          <div
+            class="db-flower"
+            data-id="hibiscus2"
+            style="top: 58%; left: 85%"
+            title="Bunga Bahagia"
+          >
+            <span class="db-fl-icon">🌺</span>
+          </div>
+          <!-- Matcha Green Flower — special herbal calm flower -->
+          <div
+            class="db-flower db-matcha"
+            data-id="matcha1"
+            style="top: 55%; left: 52%"
+            title="Bunga Matcha"
+          >
+            <span class="db-fl-icon db-matcha-icon">🍵</span>
+          </div>
+
+          <!-- Pot / Vase with 3 Stems -->
+          <div class="db-vase-wrap">
+            <!-- Stems SVG -->
+            <svg
+              class="db-stems-svg"
+              viewBox="0 0 200 130"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <!-- Left curved stem -->
+              <path
+                d="M100,125 Q70,75 52,48"
+                fill="none"
+                stroke="#5d966d"
+                stroke-width="4"
+                stroke-linecap="round"
+              />
+              <!-- Center stem -->
+              <path
+                d="M100,125 L100,24"
+                fill="none"
+                stroke="#5d966d"
+                stroke-width="4"
+                stroke-linecap="round"
+              />
+              <!-- Right curved stem -->
+              <path
+                d="M100,125 Q130,75 148,48"
+                fill="none"
+                stroke="#5d966d"
+                stroke-width="4"
+                stroke-linecap="round"
+              />
+            </svg>
+
+            <!-- Stem Flowers Attached to Stems -->
+            <div
+              class="db-flower db-stem-flower"
+              data-id="stemSunflower"
+              style="top: 30px; left: 36px"
+              title="Bunga Matahari Tangkai"
+            >
+              <span class="db-fl-icon">🌻</span>
+            </div>
+            <div
+              class="db-flower db-stem-flower"
+              data-id="stemSakura"
+              style="top: 6px; left: 85px"
+              title="Sakura Tangkai"
+            >
+              <span class="db-fl-icon">🌸</span>
+            </div>
+            <div
+              class="db-flower db-stem-flower"
+              data-id="stemDaisy"
+              style="top: 30px; left: 134px"
+              title="Daisy Tangkai"
+            >
+              <span class="db-fl-icon">🌼</span>
+            </div>
+
+            <!-- Cute Pink Vase Pot -->
+            <div class="db-vase-pot">
+              <svg viewBox="0 0 160 90" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient
+                    id="dbPotGrad"
+                    x1="0%"
+                    y1="0%"
+                    x2="0%"
+                    y2="100%"
+                  >
+                    <stop offset="0%" stop-color="#f8a5c2" />
+                    <stop offset="60%" stop-color="#f78fb3" />
+                    <stop offset="100%" stop-color="#e66767" />
+                  </linearGradient>
+                </defs>
+                <!-- Pot body -->
+                <path
+                  d="M22,30 Q12,58 26,76 Q80,95 134,76 Q148,58 138,30 Q80,20 22,30Z"
+                  fill="url(#dbPotGrad)"
+                />
+                <!-- Pot neck / rim -->
+                <ellipse
+                  cx="80"
+                  cy="30"
+                  rx="58"
+                  ry="12"
+                  fill="#f8a5c2"
+                  stroke="#f78fb3"
+                  stroke-width="1.5"
+                />
+                <ellipse
+                  cx="80"
+                  cy="30"
+                  rx="48"
+                  ry="7"
+                  fill="#4a1525"
+                  opacity="0.15"
+                />
+                <!-- Bottom accent line -->
+                <path d="M30,73 Q80,90 130,73 Q80,85 30,73Z" fill="#c44569" />
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quote Box Below Vase (As in the photo!) -->
+        <div class="db-quote-container sr sr-d4">
+          <div class="db-quote-box" id="dbQuoteBox">
+            <p id="dbQuoteText">
+              "Kamu secantik bunga tulip di musim semi, segar dan penuh harapan
+              baru."
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Personal Note Section -->
+      <div class="m-msg">
+        <div style="text-align: center; margin-bottom: 28px">
+          <p class="sec-label sr">— Personal Note —</p>
+          <h3 class="sec-title sr sr-d1">
+            Dari <span class="cfg-sender">Rex</span>, Untuk
+            <span class="cfg-recipient">Mayy</span>
+          </h3>
+        </div>
+        <div class="note-wrap sr sr-d2">
+          <span class="note-deco-tl">🌹</span>
+          <span class="note-deco-tr">💕</span>
+          <div class="note">
+            <span class="note-title"
+              >Happy Birthday, <span class="cfg-recipient">Mayy</span> 🌹</span
+            >
+            <div id="noteParagraphs">
+              <p>
+                Maaf ya cuman bisa ngasih website sederhana ini... tapi semoga
+                berkenan dan bikin kamu tersenyum hari ini 💕
+              </p>
+              <p>
+                Doa tulus selalu ada buat kamu setiap harinya tanpa kamu sadari.
+                Kamu itu orang yang luar biasa kuat dan istimewa.
+              </p>
+              <p>
+                Semoga di usia barumu ini kamu makin bersinar dan semua impianmu
+                pelan-pelan terwujud nyata.
+              </p>
+            </div>
+            <span class="note-sign"
+              >— <span class="cfg-sender">From Rex to you</span> 🌹</span
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Affirmations Grid -->
+      <div class="m-aff">
+        <p class="sec-label sr">— Words For You —</p>
+        <h3 class="sec-title sr sr-d1">Afirmasi Positif ✨</h3>
+        <p class="sec-sub sr sr-d2">Kata-kata yang selalu berlaku untukmu</p>
+        <div class="aff-grid" id="affGrid"></div>
+      </div>
+
+      <!-- Closing -->
+      <div class="m-close">
+        <div class="cl-hearts">🌹💕🌹</div>
+        <h2 class="cl-title">
+          Selamat Ulang Tahun,<br /><span>Semoga Selalu Bahagia</span>
+        </h2>
+        <p class="cl-from">Dari seseorang yang peduli 💚</p>
+        <div class="cl-note">
+          Meskipun hanya lewat halaman web sederhana ini, ketulusan dan doa baik
+          akan selalu ada untuk setiap langkahmu.
+          <br /><br /><em style="color: var(--pink)"
+            >— <span class="cfg-sender">Rex</span> 🌹</em
+          >
+        </div>
+        <div class="hashtag">#from rex to you#</div>
+      </div>
+
+      <div class="m-footer">
+        Made with 🌹 &amp; 💕 by
+        <span class="cfg-sender">Rex</span> &nbsp;·&nbsp; Happy Birthday
+        <span class="cfg-recipient">Mayy</span>!
+      </div>
+    </div>
+
+    <!-- ════════ SUB-PAGE 1: MESSAGE ════════ -->
+    <div class="sub-page" id="sp-msg">
+      <div class="sp-fall-container" id="spFallMsg"></div>
+      <div class="sp-nav">
+        <button class="sp-back" onclick="closeSub('sp-msg')">← Kembali</button>
+      </div>
+      <div style="flex: 1; overflow-y: auto">
+        <div class="sp-inner" style="padding-top: 24px">
+          <!-- Scrapbook Polaroid Section -->
+          <div
+            style="position: relative; min-height: 340px; margin: 10px 0 20px"
+          >
+            <!-- Big Polaroid Main -->
+            <div
+              id="bigPolaroid"
+              class="polaroid sr"
+              style="
+                position: relative;
+                z-index: 3;
+                padding: 10px 10px 24px;
+                transform: rotate(-3deg);
+                width: clamp(170px, 44vw, 250px);
+                margin: 0 auto 0 clamp(8px, 4vw, 24px);
+                display: inline-block;
+              "
+            >
+              <div
+                style="
+                  width: 100%;
+                  aspect-ratio: 1;
+                  overflow: hidden;
+                  border-radius: 4px;
+                "
+              >
+                <img
+                  id="bigPolaroidImg"
+                  src="images/my3.jpeg"
+                  onerror="
+                    this.onerror = null;
+                    this.src = 'images/my3.jpeg';
+                  "
+                  alt="Photo May"
+                  style="width: 100%; height: 100%; object-fit: cover"
+                />
+              </div>
+              <p
+                style="
+                  color: #333;
+                  text-align: center;
+                  margin-top: 8px;
+                  font-family: &quot;Dancing Script&quot;, cursive;
+                  font-size: clamp(14px, 2.5vw, 17px);
+                "
+              >
+                Momen Terbaik 🌹
+              </p>
+            </div>
+
+            <!-- Thumbnail Stack (Click to swap) -->
+            <div
+              style="
+                position: absolute;
+                top: 0;
+                right: clamp(4px, 3vw, 20px);
+                z-index: 2;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+              "
+            >
+              <div
+                class="polaroid sr sr-d1"
+                style="
+                  width: clamp(80px, 18vw, 105px);
+                  padding: 5px 5px 14px;
+                  transform: rotate(5deg);
+                "
+              >
+                <img
+                  id="thumb1"
+                  class="smallThumb"
+                  src="images/may2.jpeg"
+                  onerror="
+                    this.onerror = null;
+                    this.src = 'images/may2.jpeg';
+                  "
+                  alt="thumb1"
+                  style="
+                    width: 100%;
+                    aspect-ratio: 1;
+                    object-fit: cover;
+                    border-radius: 3px;
+                    cursor: pointer;
+                  "
+                />
+              </div>
+              <div
+                class="polaroid sr sr-d2"
+                style="
+                  width: clamp(80px, 18vw, 105px);
+                  padding: 5px 5px 14px;
+                  transform: rotate(-4deg);
+                "
+              >
+                <img
+                  id="thumb2"
+                  class="smallThumb"
+                  src="images/my3.jpeg"
+                  onerror="
+                    this.onerror = null;
+                    this.src = 'images/my3.jpeg';
+                  "
+                  alt="thumb2"
+                  style="
+                    width: 100%;
+                    aspect-ratio: 1;
+                    object-fit: cover;
+                    border-radius: 3px;
+                    cursor: pointer;
+                  "
+                />
+              </div>
+              <div
+                class="polaroid sr sr-d3"
+                style="
+                  width: clamp(80px, 18vw, 105px);
+                  padding: 5px 5px 14px;
+                  transform: rotate(3deg);
+                "
+              >
+                <img
+                  id="thumb3"
+                  class="smallThumb"
+                  src="images/may4.jpeg"
+                  onerror="
+                    this.onerror = null;
+                    this.src = 'images/photo-3.svg';
+                  "
+                  alt="thumb3"
+                  style="
+                    width: 100%;
+                    aspect-ratio: 1;
+                    object-fit: cover;
+                    border-radius: 3px;
+                    cursor: pointer;
+                  "
+                />
+              </div>
+              <div
+                class="polaroid sr sr-d4"
+                style="
+                  width: clamp(80px, 18vw, 105px);
+                  padding: 5px 5px 14px;
+                  transform: rotate(-2deg);
+                "
+              >
+                <img
+                  id="thumb4"
+                  class="smallThumb"
+                  src="images/may2  .jpeg"
+                  onerror="
+                    this.onerror = null;
+                    this.src = 'images/photo-3.svg';
+                  "
+                  alt="thumb4"
+                  style="
+                    width: 100%;
+                    aspect-ratio: 1;
+                    object-fit: cover;
+                    border-radius: 3px;
+                    cursor: pointer;
+                  "
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- "Dari Rex, Untuk Mayy" Banner -->
+          <div class="sr" style="text-align: center; margin-bottom: 16px">
+            <span
+              style="
+                font-family: &quot;Dancing Script&quot;, cursive;
+                font-size: clamp(18px, 4vw, 24px);
+                color: #f5a9b8;
+              "
+            >
+              Dari <span class="cfg-sender">Rex</span>, Untuk
+              <span class="cfg-recipient">Mayy</span>
+            </span>
+            <div style="font-size: 28px; margin-top: 4px">🌹💕</div>
+          </div>
+
+          <!-- Letter Card with side photo -->
+          <div
+            id="msgLetterCard"
+            style="
+              width: fit-content;
+              max-width: calc(100vw - 32px);
+              margin-left: auto;
+              margin-right: auto;
+              background: rgba(255, 255, 255, 0.96);
+              color: #2a0505;
+              border-radius: 6px;
+              padding: 18px;
+              box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+              font-size: clamp(13px, 2.5vw, 15px);
+              line-height: 1.9;
+              position: relative;
+              margin-bottom: 20px;
+              display: flex;
+              gap: 14px;
+              align-items: flex-start;
+            "
+          >
+            <!-- Letter text -->
+            <div style="flex: 1">
+              <span
+                style="
+                  font-family: &quot;Dancing Script&quot;, cursive;
+                  font-size: clamp(19px, 4vw, 25px);
+                  color: #c0392b;
+                  display: block;
+                  margin-bottom: 12px;
+                "
+              >
+                Happy Birthday, <span class="cfg-recipient">Mayy</span> 🌹
+              </span>
+              <p style="margin-bottom: 10px">
+                Heyy... selamat ulang tahun ya! 🥹💚 Semoga di usia barumu ini
+                kamu makin bersinar, makin kuat, dan selalu menemukan alasan
+                untuk tersenyum setiap harinya.
+              </p>
+              <p style="margin-bottom: 10px">
+                Kamu udah melangkah sejauh ini dan bertahan sehebat ini. Tetap
+                jaga kesehatan dan rawat hatimu yang tulus ya 🌿✨
+              </p>
+              <p style="margin-bottom: 10px">
+                Semoga semua hal baik, kehangatan, dan cinta datang ke hidupmu.
+                Kamu sangat pantas mendapatkannya 🤍
+              </p>
+              <span
+                style="
+                  font-family: &quot;Dancing Script&quot;, cursive;
+                  font-size: clamp(16px, 3vw, 20px);
+                  color: #c0392b;
+                "
+              >
+                — <span class="cfg-sender">Rex</span> 🌹
+              </span>
+            </div>
+            <!-- Side photo -->
+            <div
+              class="msg-side-photo sr"
+              style="
+                flex-shrink: 0;
+                width: clamp(90px, 22vw, 140px);
+                border-radius: 8px;
+                overflow: hidden;
+                box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+                align-self: center;
+              "
+            >
+              <img
+                src="images/may2.jpeg"
+                onerror="
+                  this.onerror = null;
+                  this.src = 'images/photo-main.svg';
+                "
+                alt="May"
+                style="
+                  width: 100%;
+                  display: block;
+                  border-radius: 8px;
+                  object-fit: cover;
+                  aspect-ratio: 3/4;
+                "
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ════════ SUB-PAGE 2: FLOWER (SUNFLOWER BOUQUET TABLET STYLE) ════════ -->
+    <div class="sub-page" id="sp-flower">
+      <div class="sp-fall-container" id="spFallFlower"></div>
+      <div class="sp-nav">
+        <button class="sp-back" onclick="closeSub('sp-flower')">
+          ← Kembali
+        </button>
+      </div>
+      <div
+        style="
+          flex: 1;
+          overflow-y: auto;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          padding: 20px 10px 40px;
+        "
+      >
+        <div class="sf-container">
+          <!-- Left Floating Pill Bubbles -->
+          <div class="sf-pills-col sf-left">
+            <div class="sf-pill" data-pill="left1">
+              <p id="sfPillL1">You are kind in ways that truly matter. 💚</p>
+            </div>
+            <div class="sf-pill" data-pill="left2">
+              <p id="sfPillL2">
+                You are strong, even when things get difficult. 🌿
+              </p>
+            </div>
+            <div class="sf-pill" data-pill="left3">
+              <p id="sfPillL3">
+                You are thoughtful and always consider others. ✨
+              </p>
+            </div>
+          </div>
+
+          <!-- Center Sunflower Bouquet Visual -->
+          <div class="sf-center-col">
+            <div class="sf-bouquet-graphic">
+              <svg viewBox="0 0 220 280" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <filter
+                    id="sfShadow"
+                    x="-10%"
+                    y="-10%"
+                    width="120%"
+                    height="130%"
+                  >
+                    <feDropShadow
+                      dx="0"
+                      dy="8"
+                      stdDeviation="12"
+                      flood-color="rgba(0,0,0,0.35)"
+                    />
+                  </filter>
+                  <linearGradient
+                    id="sfWrapGrad"
+                    x1="0%"
+                    y1="0%"
+                    x2="100%"
+                    y2="100%"
+                  >
+                    <stop offset="0%" stop-color="#e8cfad" />
+                    <stop offset="60%" stop-color="#d6b68d" />
+                    <stop offset="100%" stop-color="#b89363" />
+                  </linearGradient>
+                </defs>
+
+                <!-- Inner wrap fold & tissue paper -->
+                <path d="M48,110 L28,75 L85,90 Z" fill="#d9e6eb" />
+                <path d="M172,110 L192,75 L135,90 Z" fill="#d9e6eb" />
+
+                <!-- Leaves background -->
+                <ellipse
+                  cx="75"
+                  cy="72"
+                  rx="20"
+                  ry="10"
+                  fill="#4a7c59"
+                  transform="rotate(-35 75 72)"
+                />
+                <ellipse
+                  cx="145"
+                  cy="72"
+                  rx="20"
+                  ry="10"
+                  fill="#4a7c59"
+                  transform="rotate(35 145 72)"
+                />
+                <ellipse
+                  cx="110"
+                  cy="50"
+                  rx="14"
+                  ry="7"
+                  fill="#5a966b"
+                  transform="rotate(-15 110 50)"
+                />
+
+                <!-- White baby breath / mini daisies -->
+                <circle cx="68" cy="85" r="7" fill="#fff" />
+                <circle cx="68" cy="85" r="3" fill="#ffd700" />
+                <circle cx="82" cy="62" r="7" fill="#fff" />
+                <circle cx="82" cy="62" r="3" fill="#ffd700" />
+                <circle cx="138" cy="62" r="7" fill="#fff" />
+                <circle cx="138" cy="62" r="3" fill="#ffd700" />
+                <circle cx="152" cy="85" r="7" fill="#fff" />
+                <circle cx="152" cy="85" r="3" fill="#ffd700" />
+                <circle cx="110" cy="56" r="6" fill="#fff" />
+                <circle cx="110" cy="56" r="2.5" fill="#ffd700" />
+
+                <!-- Big Main Sunflower Center -->
+                <g transform="translate(110, 96)">
+                  <path d="M0 -42 Q8 -22 0 0 Q-8 -22 0 -42Z" fill="#ffb703" />
+                  <path
+                    d="M0 -42 Q8 -22 0 0 Q-8 -22 0 -42Z"
+                    fill="#fcbf49"
+                    transform="rotate(22.5)"
+                  />
+                  <path
+                    d="M0 -42 Q8 -22 0 0 Q-8 -22 0 -42Z"
+                    fill="#ffb703"
+                    transform="rotate(45)"
+                  />
+                  <path
+                    d="M0 -42 Q8 -22 0 0 Q-8 -22 0 -42Z"
+                    fill="#fcbf49"
+                    transform="rotate(67.5)"
+                  />
+                  <path
+                    d="M0 -42 Q8 -22 0 0 Q-8 -22 0 -42Z"
+                    fill="#ffb703"
+                    transform="rotate(90)"
+                  />
+                  <path
+                    d="M0 -42 Q8 -22 0 0 Q-8 -22 0 -42Z"
+                    fill="#fcbf49"
+                    transform="rotate(112.5)"
+                  />
+                  <path
+                    d="M0 -42 Q8 -22 0 0 Q-8 -22 0 -42Z"
+                    fill="#ffb703"
+                    transform="rotate(135)"
+                  />
+                  <path
+                    d="M0 -42 Q8 -22 0 0 Q-8 -22 0 -42Z"
+                    fill="#fcbf49"
+                    transform="rotate(157.5)"
+                  />
+                  <path
+                    d="M0 -42 Q8 -22 0 0 Q-8 -22 0 -42Z"
+                    fill="#ffb703"
+                    transform="rotate(180)"
+                  />
+                  <path
+                    d="M0 -42 Q8 -22 0 0 Q-8 -22 0 -42Z"
+                    fill="#fcbf49"
+                    transform="rotate(202.5)"
+                  />
+                  <path
+                    d="M0 -42 Q8 -22 0 0 Q-8 -22 0 -42Z"
+                    fill="#ffb703"
+                    transform="rotate(225)"
+                  />
+                  <path
+                    d="M0 -42 Q8 -22 0 0 Q-8 -22 0 -42Z"
+                    fill="#fcbf49"
+                    transform="rotate(247.5)"
+                  />
+                  <path
+                    d="M0 -42 Q8 -22 0 0 Q-8 -22 0 -42Z"
+                    fill="#ffb703"
+                    transform="rotate(270)"
+                  />
+                  <path
+                    d="M0 -42 Q8 -22 0 0 Q-8 -22 0 -42Z"
+                    fill="#fcbf49"
+                    transform="rotate(292.5)"
+                  />
+                  <path
+                    d="M0 -42 Q8 -22 0 0 Q-8 -22 0 -42Z"
+                    fill="#ffb703"
+                    transform="rotate(315)"
+                  />
+                  <path
+                    d="M0 -42 Q8 -22 0 0 Q-8 -22 0 -42Z"
+                    fill="#fcbf49"
+                    transform="rotate(337.5)"
+                  />
+
+                  <!-- Flower disk (brown center) -->
+                  <circle cx="0" cy="0" r="20" fill="#582f0e" />
+                  <circle cx="0" cy="0" r="16" fill="#7f4f24" />
+                  <circle cx="0" cy="0" r="11" fill="#936639" />
+                </g>
+
+                <!-- Kraft wrap body -->
+                <path
+                  d="M42,105 L82,230 Q110,240 138,230 L178,105 Q110,135 42,105Z"
+                  fill="url(#sfWrapGrad)"
+                  filter="url(#sfShadow)"
+                />
+                <path
+                  d="M82,230 L88,145 L132,145 L138,230"
+                  fill="none"
+                  stroke="#a47e4d"
+                  stroke-width="1.5"
+                  opacity="0.6"
+                />
+
+                <!-- White ribbon bow tied around wrap -->
+                <ellipse cx="110" cy="188" rx="14" ry="7" fill="#ffffff" />
+                <path
+                  d="M86,188 Q110,174 134,188"
+                  fill="none"
+                  stroke="#ffffff"
+                  stroke-width="5"
+                  stroke-linecap="round"
+                />
+                <!-- Ribbon tails hanging down -->
+                <path
+                  d="M106,190 Q98,215 92,230"
+                  fill="none"
+                  stroke="#ffffff"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M114,190 Q122,215 128,230"
+                  fill="none"
+                  stroke="#ffffff"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+
+            <h3 class="sf-title">Sunflower</h3>
+            <p class="sf-sub">Your favorite flower</p>
+            <button
+              class="sf-click-btn"
+              id="sfClickBtn"
+              onclick="triggerSunflowerSurprise()"
+            >
+              Click here
+            </button>
+          </div>
+
+          <!-- Right Floating Pill Bubbles -->
+          <div class="sf-pills-col sf-right">
+            <div class="sf-pill" data-pill="right1">
+              <p id="sfPillR1">You are capable of achieving your goals. 🌻</p>
+            </div>
+            <div class="sf-pill" data-pill="right2">
+              <p id="sfPillR2">You are unique, and that's your power. 💕</p>
+            </div>
+            <div class="sf-pill" data-pill="right3">
+              <p id="sfPillR3">
+                You are growing into the best version of yourself. 🌱
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ════════ SUB-PAGE 3: CAKE & INTERACTIVE CANDLE ════════ -->
+    <div class="sub-page" id="sp-cake">
+      <div class="sp-fall-container" id="spFallCake"></div>
+      <div class="sp-nav">
+        <button class="sp-back" onclick="closeSub('sp-cake')">← Kembali</button>
+      </div>
+      <div style="flex: 1; overflow-y: auto">
+        <div class="sp-inner">
+          <!-- Music Player Pill (Moved from Message to Cake Page) -->
+          <div
+            style="display: flex; justify-content: center; padding: 14px 0 10px"
+          >
+            <button id="musicBtn" onclick="toggleMusic()">
+              <span id="musicIcon" style="font-size: 20px">▶️</span>
+              <span id="musicTxt">Putar Lagu Happy Birthday</span>
+            </button>
+          </div>
+
+          <!-- Vinyl record spinning -->
+          <div
+            id="vinylWrap"
+            style="display: none; text-align: center; margin-bottom: 14px"
+          >
+            <div id="vinyl">💿</div>
+            <p
+              style="
+                font-size: 11px;
+                color: rgba(255, 255, 255, 0.7);
+                letter-spacing: 1px;
+                margin-top: 2px;
+              "
+            >
+              Playing Sweet Birthday Melody... 🎵
+            </p>
+          </div>
+
+          <!-- Interactive Candle Stage -->
+          <div class="cake-interactive-stage">
+            <h3
+              style="
+                font-family: &quot;Dancing Script&quot;, cursive;
+                font-size: clamp(24px, 5vw, 34px);
+                margin-bottom: 6px;
+              "
+            >
+              Tiup Lilin Ulang Tahun 🎂
+            </h3>
+            <p
+              style="
+                font-size: clamp(12px, 2.5vw, 14px);
+                color: rgba(255, 255, 255, 0.7);
+                margin-bottom: 14px;
+              "
+            >
+              Ketuk lilin atau klik tombol untuk memadamkan lilin dan membuat
+              permohonan!
+            </p>
+
+            <div class="candle-container" id="candleWrapper">
+              <!-- Animated Flame -->
+              <div
+                class="candle-flame"
+                id="candleFlame"
+                title="Ketuk untuk meniup!"
+              ></div>
+              <div class="smoke-puff" id="smokePuff"></div>
+
+              <!-- Candle Stick -->
+              <div
+                style="
+                  width: 14px;
+                  height: 42px;
+                  background: linear-gradient(to right, #63b3ed, #90cdf4);
+                  border-radius: 4px;
+                  margin: 0 auto;
+                  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+                "
+              ></div>
+
+              <!-- Cake Base Illustration -->
+              <div
+                style="
+                  font-size: clamp(60px, 14vw, 90px);
+                  line-height: 1;
+                  margin-top: -10px;
+                "
+              >
+                🎂
+              </div>
+            </div>
+
+            <div>
+              <button class="btn-blow" id="blowCandleBtn">
+                💨 Tiup Lilin Ulang Tahun
+              </button>
+            </div>
+
+            <div class="cake-wish-banner" id="cakeWishBanner">
+              Tutup mata, ucapkan permohonan dalam hati, lalu tiup lilinnya!
+              🕯️✨
+            </div>
+          </div>
+
+          <!-- Sweet Birthday Letter Card -->
+          <div
+            id="msgLetterCard"
+            style="
+              width: min(600px, 85vw);
+              max-width: 600px;
+              margin-left: auto;
+              margin-right: auto;
+              background: rgba(255, 255, 255, 0.96);
+              color: #2a0505;
+              border-radius: 6px;
+              padding: clamp(20px, 4vw, 32px) clamp(18px, 4vw, 28px);
+              box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+              font-size: clamp(13px, 2.5vw, 15px);
+              line-height: 1.9;
+              position: relative;
+              margin-bottom: 20px;
+              display: flex;
+              gap: 16px;
+              align-items: flex-start;
+            "
+          >
+            <span
+              style="
+                font-family: &quot;Dancing Script&quot;, cursive;
+                font-size: clamp(20px, 4vw, 26px);
+                color: #c0392b;
+                display: block;
+                margin-bottom: 10px;
+              "
+            >
+              Happy Birthday, <span class="cfg-recipient">Mayy</span>! 🎂
+            </span>
+            <p style="margin-bottom: 10px">
+              Selamat bertambah usia! Semoga panjang umur, senantiasa diberikan
+              kesehatan, hati yang tenang, dan kebahagiaan yang melimpah setiap
+              harinya.
+            </p>
+            <p style="margin-bottom: 10px">
+              Semua doa terbaik tercurah buat kamu. Semoga tahun ini membawa
+              banyak kejutan manis dan pencapaian luar biasa.
+            </p>
+            <span
+              style="
+                font-family: &quot;Dancing Script&quot;, cursive;
+                font-size: clamp(16px, 3vw, 20px);
+                color: #c0392b;
+                display: block;
+                margin-top: 10px;
+              "
+            >
+              — <span class="cfg-sender">From Rex To You</span> 🌹
+            </span>
+          </div>
+
+          <!-- Closing Tagline -->
+          <div style="text-align: center; padding: 10px 0 30px">
+            <div
+              style="
+                font-family: &quot;Dancing Script&quot;, cursive;
+                font-size: clamp(22px, 5vw, 30px);
+                margin-bottom: 6px;
+              "
+            >
+              Selamat &amp; Semoga Selalu Bahagia 🎂💚
+            </div>
+            <div class="hashtag">#from rex to you#</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ════════ PHOTO MODAL (ZOOM PREVIEW) ════════ -->
+    <div id="photoModal" aria-hidden="true">
+      <div class="pm-overlay"></div>
+      <div class="pm-inner">
+        <button class="pm-close">✕</button>
+        <img id="modalImg" src="" alt="Preview Photo" />
+      </div>
+    </div>
+
+    <!-- Configuration & Scripts -->
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
